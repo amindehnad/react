@@ -1,0 +1,21 @@
+h1{
+    color: blue;
+}
+header{
+    width: 100%;
+    padding: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    
+}
+.man{
+
+margin-left: 10rem;}
