@@ -25,7 +25,8 @@ export default function App(){
     return(
         <>
         <Header 
-        post  ={post}
+        post={post}
+        setpost={setpost}
         />
         </>
     )
