@@ -9,24 +9,7 @@ export async function GetrecpieFromapi(ingrdientsArray){
     -step by step 
     `
     try{
-        // const Respons = await fetch ("https://api.openai.com/v1/chef/completions/" ,{
-        //     method : "post",
-        //     headers : {
-        //         "content-type" : "application/json" , 
-        //         'Authorization': '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'
-        //     },
-        //     body : JSON.stringify({
-        //         "model" :  "gpt-5-nano" ,
-        //         "message" : [
-        //             {"role" : "user" , "content" : prompt}
-        //         ]
-        //     })
-        // })
-        // const data = await Respons.json()
-        // if (data.error){
-        //     console.log(data);
-        // }
-        // console.log(data)
+        
         const data =`
         . آماده‌سازی مواد
 
