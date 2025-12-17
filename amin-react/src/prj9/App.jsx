@@ -16,8 +16,7 @@ export default function App(){
             sharecount:"",
             issaave:false,
             PostImg:"",
-            capition:"aSDFGHJKL;OIUYTRFDCVBNLOIUYTFDCVBNM,"
-    
+            capition:""
     
         }
     )

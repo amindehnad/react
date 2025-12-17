@@ -3,6 +3,7 @@ import Direction from "../static/pick/icons8-paper-plane-50.png"
 import { useRef } from "react"
 export default function Header(Props){
     const SettingModel = useRef(null)
+    const dataPost = Props.post
     return(
         <>
         <header>
@@ -27,36 +28,36 @@ export default function Header(Props){
 <form action="">
 <div>
         <label htmlFor="">UserName</label>
-        <input type="text" name="UserName" />
+        <input type="text" name="UserName" defaultValue={Props.post.UserName} />
 </div>
 <div>   
         <label htmlFor="">profile Img</label>
-        <input type="text" name=" ProfileImg" />
+        <input type="text" name=" ProfileImg" defaultValue={Props.post.ProfileImg}/>
 </div>
 <div>   
         <label htmlFor="">location</label>
-        <input type="text" name="location"/>
+        <input type="text" name="location" defaultValue={Props.post.location}/>
 </div>
 <div>
         <label htmlFor="">PostImg</label>
-        <input type="text" name="PostImg" />
+        <input type="text" name="PostImg"  defaultValue={Props.post.PostImg}/>
 </div>
 <div>
         <label htmlFor="">capition</label>
-        <input type="text" name="capition" />
+        <input type="text" name="capition"  defaultValue={Props.post.capition}/>
 </div>
 <div>
         <label htmlFor="">likecount</label>
-        <input type="number" name="likecount"/>
+        <input type="number" name="likecount" defaultValue={Props.post.likecount}/>
 </div>
 <div>   
         <label htmlFor="">sendcount</label>
-        <input type="number" name="sendcount" />
+        <input type="number" name="sendcount" defaultValue={Props.post.sendcount}/>
 </div>
 
 <div>   
         <label htmlFor="">sharecount</label>
-        <input type="number" name="sharecount"/>
+        <input type="number" name="sharecount"defaultValue={Props.post.sharecount}/>
 </div>
             <button type="submit">save</button>
     </form>
