@@ -5,8 +5,8 @@ import "./static/style.css"
 export default function App(){
     const [post , setpost] = useState(
         {
-            UserName:"amin",
-            location:"iran,tehran",
+            UserName:"",
+            location:"",
             ProfileImg:"",
             likecount:350,
             sendcount:20,
@@ -25,6 +25,10 @@ export default function App(){
     return(
         <>
         <Header 
+        post={post}
+        setpost={setpost}
+        />
+        <Body 
         post={post}
         setpost={setpost}
         />

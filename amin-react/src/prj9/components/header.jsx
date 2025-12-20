@@ -3,31 +3,34 @@ import Direction from "../static/pick/icons8-paper-plane-50.png"
 import { useRef } from "react"
 export default function Header(Props){
     const SettingModel = useRef(null)
-     function editHandler(formdata){
-        const UserName = formdata.get("UserName")
-        const ProfileImg=formdata.get("ProfileImg")
-        const location=formdata.get("location")
-        const PostImg=formdata.get("PostImg")
-        const likecount=formdata.get("likecount")
-        const capition = formdata.get("capition")
-        const sendcount=formdata.get("sendcount")
-        const ComentCount=formdata.get("ComentCount")
-        Props.setpost(pervitem=>({
-        ...pervitem ,
-        UserName:UserName,
-        ProfileImg:ProfileImg,
-        location:location,
-        PostImg:PostImg,
-        likecount:likecount,
-        capition:capition,
-        sendcount:sendcount,
-        ComentCount:ComentCount
-        }))
+     function editHandler(formData){
+        const UserName = formData.get("UserName")
+        const ProfileImg=formData.get("ProfileImg")
+        const location=formData.get("location")
+        const PostImg=formData.get("PostImg")
+        const likecount=formData.get("likecount")
+        const capition = formData.get("capition")
+        const sendcount=formData.get("sendcount")
+        const ComentCount=formData.get("ComentCount")
+        console.log(ProfileImg);
+        
+                Props.setpost(pervitem=>({
+                ...pervitem ,
+                UserName:UserName,
+                ProfileImg:ProfileImg,
+                location:location,
+                PostImg:PostImg,
+                likecount:likecount,
+                capition:capition,
+                sendcount:sendcount,
+                ComentCount:ComentCount
+                }
+        )
+)
         SettingModel.current.classList.remove("Active")
-     }
+}               
      function OpensetingHandler(){
         SettingModel.current.classList.add("Active")
-        console.log("click")
      }
      function ClosesetingHandler(){
         SettingModel.current.classList.remove("Active")
@@ -60,7 +63,7 @@ export default function Header(Props){
                 </div>
                 <div>   
                         <label htmlFor="">profile Img</label>
-                        <input type="text" name=" ProfileImg" defaultValue={Props.post.ProfileImg}/>
+                        <input type="text" name="ProfileImg" defaultValue={Props.post.ProfileImg}/>
                 </div>
                 <div>   
                         <label htmlFor="">location</label>
