@@ -1,0 +1,96 @@
+:root{
+    --color-gray : #eee ;
+    --color-black : #000 ;
+    --color-red: #ff2949;
+    --color-white: #f1f1f1;
+    --color-purple:#A626d3;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 150vh;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--color-purple);
+    width: calc(100%);
+    align-items: center;
+    margin: 0rem auto;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 5rem;
+    margin: 1rem auto;
+    flex-wrap: wrap;
+    .input{
+        display: flex;
+        width: calc(50% -10rem);
+        flex-direction: column;
+        gap: 5rem;
+    }
+    input{
+        border-radius: 15px;
+        border: 2px solid var(--color-black);
+        outline: none;
+        font-size: 2rem;
+        width: 100%;
+        font-weight: 900;
+        padding: 12px 24px;
+    }
+    
+}
+.meme{
+    flex-direction: column;
+    width: 700px;
+    margin: 0 auto;
+    gap: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    img{
+        width: 100%;
+    }
+    span{
+        position: absolute;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: var(--color-white);
+        font-size: 3rem;
+        letter-spacing: 5px;
+        text-shadow: 
+        5px 5px 0 var(--color-black),
+        -5px -5px 0 var(--color-black),
+        5px -5px 0 var(--color-black),
+        -5px 5px 0 var(--color-black),
+        0 5px 0 var(--color-black),
+        5px 0 0 var(--color-black),
+        0 -5px 0 var(--color-black),
+        -5px 0 0 var(--color-black),
+        5px 5px 5px var(--color-black)
+    ;
+    }
+    .top{
+        top: 10px;
+    }
+    .bottom{
+        bottom: 10px;
+    }
+}

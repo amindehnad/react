@@ -71,6 +71,8 @@ export default function Body(Props){
         </div>
         <div>
             <button>
+            <img src={forward} alt="" />
+
             </button>
             <h3> 
                     {Props.post.sendcount} 
