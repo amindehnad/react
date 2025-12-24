@@ -3,10 +3,8 @@ export default function Header(){
     return(
         <>
         <header>
-<h1>meme generator</h1>
-
-<img src={Logo} alt="" />
-
+                <h1>meme generator</h1>
+                <img src={Logo} alt="" />
         </header>
         </>
     )
